@@ -1,0 +1,4 @@
+{
+  "priority": ["Critical", "High", "Medium", "Low"],
+  "deadlineType": ["DeadlineSet", "Anytime", "Someday"]
+}
