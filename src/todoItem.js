@@ -2,23 +2,34 @@
 import { v4 as uuidv4 } from "uuid";
 
 export default function todoItemCreator(todoTitle) {
-  let returnObject = {};
   const id = uuidv4();
-
+  let returnObject = {};
   let title = todoTitle;
-  /*   let deadlineType = null;
-  let dueDate = null;
-
   let completed = false;
-  let dateCompleted = null;
 
-  let projectId = null; */
+  // let projectId = null;
 
   const getID = () => id;
 
   const getTitle = () => title;
   const setTitle = (newTitle) => {
     title = newTitle;
+  };
+
+  const isCompleted = () => completed;
+  const markCompleted = (completionDate) => {
+    completed = true;
+
+    const completionModule = {
+      completionDate,
+      getCompletionDate: () => returnObject.completionDate,
+      markUncompleted: () => {
+        completed = false;
+        returnObject.completionDate = undefined;
+      },
+    };
+
+    Object.assign(returnObject, completionModule);
   };
 
   const addNotes = (notes) => {
@@ -73,6 +84,8 @@ export default function todoItemCreator(todoTitle) {
     getID,
     getTitle,
     setTitle,
+    isCompleted,
+    markCompleted,
     addNotes,
     addPriority,
     addDeadlineType,
