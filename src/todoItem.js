@@ -45,19 +45,38 @@ export default function todoItemCreator(todoTitle) {
     Object.assign(returnObject, priorityModule);
   };
 
-  returnObject = { getID, getTitle, setTitle, addNotes, addPriority };
-  return returnObject;
-}
+  const addDeadlineType = (deadlineType) => {
+    const deadlineTypeModule = {
+      deadlineType,
+      getDeadlineType: () => returnObject.deadlineType,
+      setDeadlineType(newDeadlineType) {
+        returnObject.deadlineType = newDeadlineType;
+      },
+    };
 
-/* export function addNotes(target, notes) {
-  const notesObject = {
-    notes,
-    getNotes: () => this.notes,
-    setNotes(newNotes) {
-      this.notes = newNotes;
-    },
+    Object.assign(returnObject, deadlineTypeModule);
   };
 
-  Object.assign(target, notesObject);
+  const addDueDate = (dueDate) => {
+    const dueDateModule = {
+      dueDate,
+      getDueDate: () => returnObject.dueDate,
+      setDueDate(newDueDate) {
+        returnObject.dueDate = newDueDate;
+      },
+    };
+
+    Object.assign(returnObject, dueDateModule);
+  };
+
+  returnObject = {
+    getID,
+    getTitle,
+    setTitle,
+    addNotes,
+    addPriority,
+    addDeadlineType,
+    addDueDate,
+  };
+  return returnObject;
 }
- */
