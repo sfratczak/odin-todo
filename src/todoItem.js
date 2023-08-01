@@ -2,13 +2,12 @@
 import { v4 as uuidv4 } from "uuid";
 
 export default function todoItemCreator(todoTitle) {
+  let returnObject = {};
   const id = uuidv4();
 
   let title = todoTitle;
   /*   let deadlineType = null;
   let dueDate = null;
-
-  let priority = 0;
 
   let completed = false;
   let dateCompleted = null;
@@ -25,16 +24,28 @@ export default function todoItemCreator(todoTitle) {
   const addNotes = (notes) => {
     const notesModule = {
       notes,
-      getNotes: () => this.notes,
+      getNotes: () => returnObject.notes,
       setNotes(newNotes) {
-        this.notes = newNotes;
+        returnObject.notes = newNotes;
       },
     };
 
     Object.assign(returnObject, notesModule);
   };
 
-  const returnObject = { getID, getTitle, setTitle, addNotes };
+  const addPriority = (priority) => {
+    const priorityModule = {
+      priority,
+      getPriority: () => returnObject.priority,
+      setPriority(newPriority) {
+        returnObject.priority = newPriority;
+      },
+    };
+
+    Object.assign(returnObject, priorityModule);
+  };
+
+  returnObject = { getID, getTitle, setTitle, addNotes, addPriority };
   return returnObject;
 }
 
