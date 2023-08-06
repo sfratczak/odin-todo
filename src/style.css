@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Noto Sans Regular";
+  font-style: normal;
+  src: local("Noto Sans Regular") url(../src/fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans Display Regular";
+  font-style: normal;
+  src: local("Noto Sans Display Regular")
+    url(../src/fonts/NotoSansDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans Display Bold";
+  font-style: normal;
+  src: local("Noto Sans Display Bold")
+    url(../src/fonts/NotoSansDisplay-Bold.ttf);
+}
+
+:root {
+  --clr-slate-50: #f8fafcff;
+  --clr-slate-100: #f1f5f9ff;
+  --clr-slate-200: #e2e8f0ff;
+  --clr-slate-300: #cbd5e1ff;
+  --clr-slate-400: #94a3b8ff;
+  --clr-slate-500: #64748bff;
+  --clr-slate-600: #475569ff;
+  --clr-slate-700: #334155ff;
+  --clr-slate-800: #1e293bff;
+  --clr-slate-900: #0f172aff;
+  --clr-slate-950: #020617ff;
+  --clr-turq-main: #164b60ff;
+  --clr-blue-main: #1b6b93ff;
+  --clr-cyan-main: #4fc0d0ff;
+  --clr-green-main: #a2ff86ff;
+  --clr-turq-dark: #10394aff;
+  --clr-blue-dark: #165577ff;
+  --clr-cyan-dark: #2da0b1ff;
+  --clr-green-dark: #87fa66ff;
+  --clr-turq-verydark: #0c2d3cff;
+  --clr-blue-verydark: #10425bff;
+  --clr-cyan-verydark: #14899aff;
+  --clr-green-verydark: #71f44aff;
+  --clr-turq-light: #1a5b73ff;
+  --clr-blue-light: #2382b1ff;
+  --clr-cyan-light: #71dae8ff;
+  --clr-green-light: #bbffa6ff;
+  --clr-turq-verylight: #1f6d88ff;
+  --clr-blue-verylight: #49b5eaff;
+  --clr-cyan-verylight: #95eefbff;
+  --clr-green-verylight: #c4ffb7ff;
+  --clr-red: #ff3b2fff;
+  --clr-red-light: #ffacacff;
+  --clr-red-hl: rgb(245, 127, 127, 0.1);
+  --clr-green-hl: rgb(162, 255, 134, 0.1);
+  --clr-slate-200-trans: rgb(226, 232, 240, 0.5);
+}
+
+* {
+  font-family: "Noto Sans Regular", Helvetica, sans-serif;
+  font-size: 16px;
+}
