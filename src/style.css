@@ -1,18 +1,17 @@
 @font-face {
   font-family: "Noto Sans Regular";
-  font-style: normal;
-  src: local("Noto Sans Regular") url(../src/fonts/NotoSans-Regular.ttf);
+  src: local("Noto Sans Regular"), local("NotoSans-Regular"),
+    url(../src/fonts/NotoSans-Regular.ttf);
 }
 @font-face {
   font-family: "Noto Sans Display Regular";
-  font-style: normal;
-  src: local("Noto Sans Display Regular")
+  src: local("Noto Sans Display Regular"), local("NotoSansDisplay-Regular"),
     url(../src/fonts/NotoSansDisplay-Regular.ttf);
 }
 @font-face {
   font-family: "Noto Sans Display Bold";
-  font-style: normal;
-  src: local("Noto Sans Display Bold")
+  font-weight: bold;
+  src: local("Noto Sans Display Bold"), local("NotoSansDisplay-Bold"),
     url(../src/fonts/NotoSansDisplay-Bold.ttf);
 }
 
@@ -56,6 +55,35 @@
 }
 
 * {
-  font-family: "Noto Sans Regular", Helvetica, sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto 1fr;
+}
+
+.navigation-column {
+  height: 100vh;
+  width: 216px;
+  background-color: var(--clr-turq-verydark);
+  position: relative;
+}
+
+.nav-column-content {
+  position: fixed;
+  width: inherit;
+  padding: 8px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: 16px;
+  align-items: center;
+  background-color: red;
+}
+
+.nav-title {
+  height: 2rem;
+  margin: auto;
 }
