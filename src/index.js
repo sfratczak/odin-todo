@@ -1,4 +1,6 @@
 import "./reset.css";
 import "./style.css";
-import * as properties from "./properties.json";
-import todoItemCreator from "./todoItem";
+import { navBarItems } from "./properties";
+import { navBarModule } from "./domManager";
+
+navBarModule.renderNav(navBarItems);

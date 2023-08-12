@@ -22,6 +22,40 @@ export const navBarItems = {
       iconAltText: "Inbox icon",
     },
   ],
+  "nav-ul-deadline": [
+    {
+      itemText: "Today",
+      itemClassName: "li-today",
+      itemLink: "#",
+      itemLinkClassName: "a-today",
+      itemIconSrc: "../src/img/Today.svg",
+      iconAltText: "Today icon",
+    },
+    {
+      itemText: "Upcoming",
+      itemClassName: "li-upcoming",
+      itemLink: "#",
+      itemLinkClassName: "a-upcoming",
+      itemIconSrc: "../src/img/Upcoming.svg",
+      iconAltText: "Upcoming icon",
+    },
+    {
+      itemText: "Anytime",
+      itemClassName: "li-anytime",
+      itemLink: "#",
+      itemLinkClassName: "a-anytime",
+      itemIconSrc: "../src/img/Anytime.svg",
+      iconAltText: "Anytime icon",
+    },
+    {
+      itemText: "Someday",
+      itemClassName: "li-someday",
+      itemLink: "#",
+      itemLinkClassName: "a-someday",
+      itemIconSrc: "../src/img/Someday.svg",
+      iconAltText: "Someday icon",
+    },
+  ],
 };
 
 export const DueDate = (() => {})();

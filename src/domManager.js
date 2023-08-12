@@ -1,5 +1,3 @@
-import { navBarItems } from "./properties";
-
 export const navBarModule = (() => {
   const nav = document.querySelector("nav");
 
@@ -41,7 +39,26 @@ export const navBarModule = (() => {
     return item;
   };
 
-  return { createNavListItem };
+  const createNavList = (listClassName) => {
+    const navList = document.createElement("ul");
+    navList.classList.add(listClassName);
+
+    return navList;
+  };
+
+  const renderNav = (propertyObject) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const [listName, itemList] of Object.entries(propertyObject)) {
+      const list = createNavList(listName);
+      itemList.forEach((item) => {
+        list.appendChild(createNavListItem(item));
+      });
+
+      nav.appendChild(list);
+    }
+  };
+
+  return { renderNav };
 })();
 
 export const someotherthing = "hello";
