@@ -11,4 +11,17 @@ export const deadlineType = {
   sometime: { deadlineTypeName: "Sometime" },
 };
 
+export const navBarItems = {
+  "nav-ul-inbox": [
+    {
+      itemText: "Inbox",
+      itemClassName: "li-inbox",
+      itemLink: "#",
+      itemLinkClassName: "a-inbox",
+      itemIconSrc: "../src/img/Inbox.svg",
+      iconAltText: "Inbox icon",
+    },
+  ],
+};
+
 export const DueDate = (() => {})();
