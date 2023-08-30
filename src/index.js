@@ -1,5 +1,5 @@
-import "./reset.css";
-import "./style.css";
+import "./css/reset.css";
+import "./css/style.css";
 import { navBarItems } from "./properties";
 import { navBarModule } from "./domManager";
 

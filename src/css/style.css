@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Noto Sans Regular";
   src: local("Noto Sans Regular"), local("NotoSans-Regular"),
-    url(../src/fonts/NotoSans-Regular.ttf);
+    url(../fonts/NotoSans-Regular.ttf);
 }
 @font-face {
   font-family: "Noto Sans Display Regular";
   src: local("Noto Sans Display Regular"), local("NotoSansDisplay-Regular"),
-    url(../src/fonts/NotoSansDisplay-Regular.ttf);
+    url(../fonts/NotoSansDisplay-Regular.ttf);
 }
 @font-face {
   font-family: "Noto Sans Display Bold";
   font-weight: bold;
   src: local("Noto Sans Display Bold"), local("NotoSansDisplay-Bold"),
-    url(../src/fonts/NotoSansDisplay-Bold.ttf);
+    url(../fonts/NotoSansDisplay-Bold.ttf);
 }
 
 :root {
