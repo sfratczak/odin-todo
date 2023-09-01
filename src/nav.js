@@ -22,10 +22,15 @@ function addNavlinksClickEvent(navlinkNodeList) {
   });
 }
 
-export default function navInit() {
-  const navlinks = document.querySelectorAll("[data-navlink]");
+function loadDefaultNavlink(navlinkNodeList) {
+  // Loads first navlink (Inbox) by default to reduce error possibility.
+  if (navlinkNodeList[0]) {
+    PubSub.publish("navlink-active", navlinkNodeList[0].dataset.navlink);
+    markNavlinkActive(navlinkNodeList[0]);
+  }
+}
 
-  addNavlinksClickEvent(navlinks);
+function initTestParagraph() {
   const app = document.getElementById("app");
 
   const sampleOutput = document.createElement("p");
@@ -35,4 +40,12 @@ export default function navInit() {
     sampleOutput.textContent = `${msg}: ${data}`;
   };
   PubSub.subscribe("navlink-active", changePara);
+}
+
+export default function navInit() {
+  const navlinks = document.querySelectorAll("[data-navlink]");
+
+  initTestParagraph();
+  loadDefaultNavlink(navlinks);
+  addNavlinksClickEvent(navlinks);
 }
