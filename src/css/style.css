@@ -117,6 +117,7 @@ nav a {
   color: var(--clr-slate-400);
 }
 
-nav a:hover {
+nav a:hover,
+nav .navlink-active {
   background-color: var(--clr-turq-main);
 }
