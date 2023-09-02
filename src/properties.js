@@ -12,50 +12,46 @@ export const deadlineType = {
 };
 
 export const navBarItems = {
-  "nav-ul-inbox": [
-    {
-      itemText: "Inbox",
-      itemClassName: "li-inbox",
-      itemLink: "#",
-      itemLinkClassName: "a-inbox",
-      itemIconSrc: "../src/img/Inbox.svg",
-      iconAltText: "Inbox icon",
-    },
-  ],
-  "nav-ul-deadline": [
-    {
-      itemText: "Today",
-      itemClassName: "li-today",
-      itemLink: "#",
-      itemLinkClassName: "a-today",
-      itemIconSrc: "../src/img/Today.svg",
-      iconAltText: "Today icon",
-    },
-    {
-      itemText: "Upcoming",
-      itemClassName: "li-upcoming",
-      itemLink: "#",
-      itemLinkClassName: "a-upcoming",
-      itemIconSrc: "../src/img/Upcoming.svg",
-      iconAltText: "Upcoming icon",
-    },
-    {
-      itemText: "Anytime",
-      itemClassName: "li-anytime",
-      itemLink: "#",
-      itemLinkClassName: "a-anytime",
-      itemIconSrc: "../src/img/Anytime.svg",
-      iconAltText: "Anytime icon",
-    },
-    {
-      itemText: "Someday",
-      itemClassName: "li-someday",
-      itemLink: "#",
-      itemLinkClassName: "a-someday",
-      itemIconSrc: "../src/img/Someday.svg",
-      iconAltText: "Someday icon",
-    },
-  ],
+  inbox: {
+    text: "Inbox",
+    iconSrc: "../src/img/Inbox.svg",
+    iconAltText: "Inbox icon",
+  },
+  "deadline-today": {
+    text: "Today",
+    iconSrc: "../src/img/Today.svg",
+    iconAltText: "Deadline today icon",
+  },
+  "deadline-upcoming": {
+    text: "Upcoming",
+    iconSrc: "../src/img/Upcoming.svg",
+    iconAltText: "Deadline upcoming icon",
+  },
+  "deadline-anytime": {
+    text: "Anytime",
+    iconSrc: "../src/img/Anytime.svg",
+    iconAltText: "Deadline anytime icon",
+  },
+  "deadline-someday": {
+    text: "Someday",
+    iconSrc: "../src/img/Someday.svg",
+    iconAltText: "Deadline someday icon",
+  },
+  priorityboard: {
+    text: "Priority Board",
+    iconSrc: "../src/img/PriorityBoard.svg",
+    iconAltText: "Priority board icon",
+  },
+  logbook: {
+    text: "Logbook",
+    iconSrc: "../src/img/Logbook.svg",
+    iconAltText: "Logbook icon",
+  },
+  project: {
+    text: "Sample Project",
+    iconSrc: "../src/img/Project.svg",
+    iconAltText: "Project icon",
+  },
 };
 
 export const DueDate = (() => {})();

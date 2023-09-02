@@ -30,22 +30,9 @@ function loadDefaultNavlink(navlinkNodeList) {
   }
 }
 
-function initTestParagraph() {
-  const app = document.getElementById("app");
-
-  const sampleOutput = document.createElement("p");
-  app.appendChild(sampleOutput);
-
-  const changePara = (msg, data) => {
-    sampleOutput.textContent = `${msg}: ${data}`;
-  };
-  PubSub.subscribe("navlink-active", changePara);
-}
-
 export default function navInit() {
   const navlinks = document.querySelectorAll("[data-navlink]");
 
-  initTestParagraph();
   loadDefaultNavlink(navlinks);
   addNavlinksClickEvent(navlinks);
 }
