@@ -127,3 +127,32 @@ nav a:hover,
 nav .navlink-active {
   background-color: var(--clr-turq-main);
 }
+
+main {
+  background-color: var(--clr-blue-verydark);
+  padding: 56px 32px 0px 32px;
+}
+
+.main-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(560px, 960px);
+  grid-template-rows: auto 1fr;
+  row-gap: 32px;
+}
+
+.main-header {
+  font-family: "Noto Sans Display Bold", Helvetica, sans-serif;
+  color: var(--clr-slate-200);
+  font-size: 2rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.5rem;
+
+  width: 100%;
+  display: flex;
+  column-gap: 8px;
+}
+
+.main-header > img {
+  width: 32px;
+}
